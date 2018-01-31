@@ -1,34 +1,61 @@
-body {
-  padding: 50px;
-  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+body {}
 
 a {
   color: #00B7FF;
 }
 
-
-/*Pure CSS customizing*/
-.pure-g {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 768px) {
-  .pure-g {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .pure-g {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .pure-g {
-    width: 1170px;
-  }
+.navbar .nav-item:not(:last-child) {
+  margin-right: 1rem;
 }
 
+.navbar .nav-item:hover {}
 
+.logo-wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo-wrapper>img {
+  width: 4rem;
+}
+
+section.header-section {
+  height: 500px;
+  background-image: url(/img/img-header.jpg);
+  background-position: center;
+}
+
+section.header-section .container {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.services-section {
+  padding: 80px 20px;
+}
+
+.services-wrapper {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+section.services-section .service-item {
+  display: inline-block;
+  border: 4px solid #424242;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+section.services-section .service-item .service-description {
+  height: 100%;
+  text-align: center;
+  background-color: darkgray;
+}
+
+section.services-section .service-item .service-body {
+  background-image: url(/img/img-service.jpg);
+  background-position: center;
+  height: 300px;
+  width: 250px;
+}

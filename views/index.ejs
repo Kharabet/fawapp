@@ -8,41 +8,96 @@
   <title>
     <%= title %>
   </title>
-  <link rel='stylesheet' href='/css/main.css' />
   <link rel='stylesheet' href='/css/bootstrap.css' />
+  <link rel='stylesheet' href='/css/main.css' />
+  <link rel='stylesheet' href='/css/media.css' />
+  
 </head>
 
 <body>
   <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item ">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="logo-wrapper">
+
+            <img src="/img/logo.jpg" alt="logo">
           </div>
-        </nav>
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Link1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link4</a>
+            </li>
+          </ul>
+          <div class="conacts">
+            <div class="phone">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span class="phone-number">+38-050-123-45-67</span>
+            </div>
+            <div class="email">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span class="email-address">example@mail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
+  <section class="header-section">
+    <div class="container text-center d-flex">
+      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, perferendis?</h1>
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem enim sequi voluptatibus praesentium iure porro modi, id
+        soluta ab sunt!</h3>
+    </div>
+  </section>
+  <section class="services-section">
+    <div class="services-wrapper container d-flex">
+      <div class="service-item">
+        <div class="service-description">
+          <h4>Service1</h4>
+        </div>
+        <div class="service-body"></div>
+      </div>
+      <div class="service-item">
+        <div class="service-description">
+          <h4>Service2</h4>
+        </div>
+        <div class="service-body"></div>
+      </div>
+      <div class="service-item">
+        <div class="service-description">
+          <h4>Service3</h4>
+        </div>
+        <div class="service-body"></div>
+      </div>
+      <div class="service-item">
+        <div class="service-description text-center">
+          <h4>Service4</h4>
+        </div>
+        <div class="service-body"></div>
+      </div>
+    </div>
+  </section>
   <main></main>
   <footer></footer>
-  <!-- <script src="/js/bootstrap.bundle.js"></script> -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="/js/jquery-3.3.1.js"></script>
+  <script src="/js/bootstrap.bundle.js"></script>
   <script src="/js/main.js"></script>
 </body>
 
