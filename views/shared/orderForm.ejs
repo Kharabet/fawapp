@@ -1,0 +1,69 @@
+<div class="modal fade order-form">
+    <div class="edit-group">
+        <div class="modal-dialog">
+            <div class="modal-content clearfix">
+                <div class="modal-header">
+                    <button type="button" class="close modal-close">&times;</button>
+                    <h4 class="modal-title text-center">Lorem</h4>
+                </div>
+                <div class=" modal-body">
+                    <form class="form-horizontal favorite-writer-group-info" role="form" action="/api/order" method="POST">
+                        <div class="form-group row">
+                            <label class="col-sm-3 control-label">Your Name:&nbsp;
+                                <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your name"></i>
+                            </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control required" name="customerName" />
+                                <span class="help-block error"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 control-label">Your Email:&nbsp;
+                                <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your e-mail"></i>
+                            </label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control required" name="customerEmail" />
+                                <span class="help-block error"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 control-label">Your Phone:&nbsp;
+                                <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your phone"></i>
+                            </label>
+                            <div class="col-sm-9">
+                                <input type="tel" class="form-control required" name="customerPhone" />
+                                <span class="help-block error"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 control-label">Your Comment:&nbsp;
+                                <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your comment"></i>
+                            </label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control required" name="instructions"></textarea>
+                                <span class="help-block error"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 control-label">Your File:&nbsp;
+                                <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your file"></i>
+                            </label>
+                            <div class="col-sm-9">
+                                <input class="control-label" type='file' name="customerFile" />
+                                <label class="btn btn-sm pull-right" for="user-avatar">Choose a File</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row buttons">
+                            <div class="col-xs-12 text-right ">
+                                <button type="button" class="btn btn-default modal-close">Close</button>
+                                <button type="submit" class="btn btn-success submit">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.modal -->
