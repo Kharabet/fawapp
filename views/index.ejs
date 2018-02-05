@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
-    <%= title %>
+    FAWAPP
   </title>
   <link rel='stylesheet' href='/css/bootstrap.css' />
   <link rel='stylesheet' href='/css/main.css' />
@@ -185,13 +185,13 @@
             <button type="button" class="close modal-close">&times;</button>
           </div>
           <div class=" modal-body">
-            <form class="form-horizontal favorite-writer-group-info" role="form" action="/send-email" method="POST">
+            <form class="form-horizontal favorite-writer-group-info" enctype='multipart/form-data' role="form" action="/send-email" method="POST">
               <div class="form-group row">
                 <label class="col-sm-3 control-label">Your Name:&nbsp;
                   <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your name"></i>
                 </label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control required" name="customerName" />
+                  <input type="text" class="form-control" required name="customerName" />
                   <span class="help-block error"></span>
                 </div>
               </div>
@@ -200,7 +200,7 @@
                   <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your e-mail"></i>
                 </label>
                 <div class="col-sm-9">
-                  <input type="email" class="form-control required" name="customerEmail" />
+                  <input type="email" class="form-control" required name="customerEmail" />
                   <span class="help-block error"></span>
                 </div>
               </div>
@@ -209,7 +209,7 @@
                   <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your phone"></i>
                 </label>
                 <div class="col-sm-9">
-                  <input type="tel" class="form-control required" name="customerPhone" />
+                  <input type="tel" class="form-control" pattern="^(0|[1-9][0-9]*)$" name="customerPhone" />
                   <span class="help-block error"></span>
                 </div>
               </div>
@@ -218,7 +218,7 @@
                   <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your comment"></i>
                 </label>
                 <div class="col-sm-9">
-                  <textarea class="form-control required" name="customerComment"></textarea>
+                  <textarea class="form-control" name="customerComment"></textarea>
                   <span class="help-block error"></span>
                 </div>
               </div>
