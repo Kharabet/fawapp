@@ -3,7 +3,6 @@ var router = express.Router();
 var nodeMailer = require('nodemailer');
 var ejs = require("ejs");
 var multer = require('multer');
-var xoauth2 = require('xoauth2');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
