@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="top">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -32,16 +32,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
-              <a class="nav-link" href="#">Link1</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link2</a>
+              <a class="nav-link" href="#hiw">How It Works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link3</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link4</a>
+              <a class="nav-link" href="#contact-us">Contact</a>
             </li>
           </ul>
           <div class="conacts">
@@ -68,7 +68,7 @@
         soluta ab sunt!</h3>
     </div>
   </section>
-  <section class="services-section">
+  <section  id="services"  class="services-section">
     <div class="services-wrapper container d-flex">
       <div class="service-item">
         <div class="service-description">
@@ -136,7 +136,7 @@
       </div>
     </div>
   </section>
-  <section class="how-it-works">
+  <section id="hiw" class="how-it-works">
     <div class="how-it-works-wrapper container d-flex">
       <div class="hiw-item text-center">
         <div class="hiw-image-wrapper">
@@ -176,7 +176,51 @@
       </div>
     </div>
   </section>
-  <div id="order-form" class="modal fade order-form">
+  <section id="about" class="about">
+    <div class="container">
+      <div class="post post-img-left">
+        <div class="post-image">
+          <img src="/img/img-post.jpg" alt="">
+        </div>
+        <p class="post-content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta commodi nesciunt voluptas suscipit rem magnam ratione
+          amet dolor alias veniam nobis harum quis, eius exercitationem! Quia, tenetur. Nulla reprehenderit ullam alias itaque
+          dolores voluptate, eligendi voluptatem doloribus dolore iusto illum quasi perferendis amet beatae. Quia iure numquam
+          perferendis adipisci dolore ea consequuntur iusto temporibus, earum optio dolorum ipsam atque id accusamus aliquam
+          quaerat. Nostrum, blanditiis temporibus? Ex ipsa aliquid, ab consequatur quod molestias pariatur ratione consectetur
+          doloremque, itaque laboriosam nesciunt. Fuga, autem. Nesciunt ipsam recusandae, dignissimos veniam non, commodi
+          vero debitis dolor asperiores suscipit quae quaerat quo obcaecati sint ex!
+        </p>
+      </div>
+
+      <div class="post post-img-right">
+        <div class="post-image">
+          <img src="/img/img-post.jpg" alt="">
+        </div>
+        <p class="post-content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta commodi nesciunt voluptas suscipit rem magnam ratione
+          amet dolor alias veniam nobis harum quis, eius exercitationem! Quia, tenetur. Nulla reprehenderit ullam alias itaque
+          dolores voluptate, eligendi voluptatem doloribus dolore iusto illum quasi perferendis amet beatae. Quia iure numquam
+          perferendis adipisci dolore ea consequuntur iusto temporibus, earum optio dolorum ipsam atque id accusamus aliquam
+          quaerat. Nostrum, blanditiis temporibus? Ex ipsa aliquid, ab consequatur quod molestias pariatur ratione consectetur
+          doloremque, itaque laboriosam nesciunt. Fuga, autem. Nesciunt ipsam recusandae, dignissimos veniam non, commodi
+          vero debitis dolor asperiores suscipit quae quaerat quo obcaecati sint ex!
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="contact-us" class="contact-us">
+      <div class="container">
+          <h3 class="text-center">Contact Us</h3>
+          <div class="order-form-wrapper">
+            <% include ./shared/orderForm %>
+          </div>
+        </div>
+  </section>
+  <footer>
+    <div class="container text-center">
+        © 2018 All rights Reserved. fawapp.com
+    </div>
+  </footer>
+  <div id="order-form-modal" class="modal fade">
     <div class="edit-group">
       <div class="modal-dialog">
         <div class="modal-content clearfix">
@@ -185,66 +229,14 @@
             <button type="button" class="close modal-close">&times;</button>
           </div>
           <div class=" modal-body">
-            <form class="form-horizontal favorite-writer-group-info" enctype='multipart/form-data' role="form" action="/send-email" method="POST">
-              <div class="form-group row">
-                <label class="col-sm-3 control-label">Your Name:&nbsp;
-                  <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your name"></i>
-                </label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" required name="customerName" />
-                  <span class="help-block error"></span>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-sm-3 control-label">Your Email:&nbsp;
-                  <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your e-mail"></i>
-                </label>
-                <div class="col-sm-9">
-                  <input type="email" class="form-control" required name="customerEmail" />
-                  <span class="help-block error"></span>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-sm-3 control-label">Your Phone:&nbsp;
-                  <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your phone"></i>
-                </label>
-                <div class="col-sm-9">
-                  <input type="tel" class="form-control" pattern="^(0|[1-9][0-9]*)$" name="customerPhone" />
-                  <span class="help-block error"></span>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-sm-3 control-label">Your Comment:&nbsp;
-                  <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your comment"></i>
-                </label>
-                <div class="col-sm-9">
-                  <textarea class="form-control" name="customerComment"></textarea>
-                  <span class="help-block error"></span>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-sm-3 control-label">Your File:&nbsp;
-                  <i class="fa fa-info-circle" data-toggle="tooltip" title="Please insert your file"></i>
-                </label>
-                <div class="col-sm-9">
-                  <input class="control-label" type='file' name="customerFile" />
-                  <label class="btn btn-sm pull-right" for="user-avatar">Choose a File</label>
-                </div>
-              </div>
-
-              <div class="text-right buttons">
-                <button type="button" class="btn btn-default modal-close">Close</button>
-                <button type="submit" class="btn btn-success submit">OK</button>
-              </div>
-            </form>
+            <% include ./shared/orderForm %>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- /.modal -->
-  <main></main>
-  <footer></footer>
+  <a href="#top" class="cd-top">Top</a>
   <script src="/js/jquery-3.3.1.js"></script>
   <script src="/js/bootstrap.bundle.js"></script>
   <script src="/js/main.js"></script>
