@@ -1,7 +1,6 @@
 var express = require('express');
 var webpack = require('webpack');
-var webpackDevMiddleware = require('webpack-dev-middleware');
-var webpackHotMiddleware = require('webpack-hot-middleware');
+
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -20,11 +19,12 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 if (isDevelopment) {
+  var webpackHotMiddleware = require('webpack-hot-middleware');
   var config = require('./webpack.dev.js');
   var compiler = webpack(config);
   app.use(webpackHotMiddleware(compiler));
 }
-else{
+else {
   app.use(express.static(path.join(__dirname, 'public')));
   app.use(express.static(path.join(__dirname, 'dist')));
 }
