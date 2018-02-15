@@ -33,7 +33,6 @@ module.exports = {
     ]
   },
   plugins: [
-    // new CleanWebpackPlugin(['dist']),
     new ExtractTextPlugin({ // define where to save the file
       filename: '[name].bundle.css',
       allChunks: true,
