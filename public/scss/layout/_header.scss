@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.navbar .nav-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.order-now {
+  margin-left: 10px;
+}
+
+.logo-wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  > img {
+    width: 4rem;
+  }
+}

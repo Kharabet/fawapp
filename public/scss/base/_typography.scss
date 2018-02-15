@@ -1,0 +1,21 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 16px /1.4285714285714285714285714285714 $text-font-stack;
+}
+
+@media only screen and (max-width : 768px) {
+  html{
+      font-size: 14px;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  body{
+      font-size: 13px;
+  }
+
+}
+

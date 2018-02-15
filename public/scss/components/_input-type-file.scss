@@ -1,0 +1,19 @@
+input[type='file'] {
+  display: inline-block;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile-label {
+  color: white;
+  background-color: #0077a1;
+  display: inline-block;
+  cursor: pointer;
+  &:focus + label, + label:hover{ 
+    background-color: #0094c9;
+  }
+}

@@ -8,9 +8,10 @@
   <title>
     FAWAPP
   </title>
-  <link rel='stylesheet' href='/css/bootstrap.css' />
+  <!-- <link rel='stylesheet' href='/css/bootstrap.css' />
   <link rel='stylesheet' href='/css/main.css' />
-  <link rel='stylesheet' href='/css/media.css' />
+  <link rel='stylesheet' href='/css/media.css' /> -->
+  <link rel='stylesheet' href='/main.bundle.css' />
 </head>
 
 <body>
@@ -68,7 +69,7 @@
         soluta ab sunt!</h3>
     </div>
   </section>
-  <section  id="services"  class="services-section">
+  <section id="services" class="services-section">
     <div class="services-wrapper container d-flex">
       <div class="service-item">
         <div class="service-description">
@@ -208,16 +209,16 @@
     </div>
   </section>
   <section id="contact-us" class="contact-us">
-      <div class="container">
-          <h3 class="text-center">Contact Us</h3>
-          <div class="order-form-wrapper">
+    <div class="container">
+      <h3 class="text-center">Contact Us</h3>
+      <div class="order-form-wrapper">
             <% include ./shared/orderForm %>
           </div>
-        </div>
+    </div>
   </section>
   <footer>
     <div class="container text-center">
-        © 2018 All rights Reserved. fawapp.com
+      © 2018 All rights Reserved. fawapp.com
     </div>
   </footer>
   <div id="order-form-modal" class="modal fade">
@@ -226,7 +227,9 @@
         <div class="modal-content clearfix">
           <div class="modal-header">
             <h4 class="modal-title text-center">Lorem</h4>
-            <button type="button" class="close modal-close">&times;</button>
+            <button type="button" class="close close-modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
           <div class=" modal-body">
             <% include ./shared/orderForm %>
@@ -237,9 +240,10 @@
   </div>
   <!-- /.modal -->
   <a href="#top" class="cd-top">Top</a>
-  <script src="/js/jquery-3.3.1.js"></script>
+  <!-- <script src="/js/jquery-3.3.1.js"></script>
   <script src="/js/bootstrap.bundle.js"></script>
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js"></script> -->
+  <script src="/main.bundle.js"></script>
 </body>
 
 </html>
